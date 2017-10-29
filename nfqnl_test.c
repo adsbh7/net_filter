@@ -111,7 +111,7 @@ static int cb(struct nfq_q_handle *qh, struct nfgenmsg *nfmsg,
 				i=0;	
 				while(1)
 				{				
-					if(buf[i] == "\x0d")
+					if(buf[i] == 0x0d)
 					 break;	
 					if(i%16 == 0)
 						printf("\n");				
